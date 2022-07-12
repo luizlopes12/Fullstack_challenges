@@ -25,6 +25,7 @@ const Uploader = () => {
     console.log(form.file);
     API.post("/upload", await form).then(async (response) => {
         setImageUrl(await response.data)
+        console.log(response.data)
     });
   };
 
