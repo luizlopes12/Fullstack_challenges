@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import dragIllustration from "../../img/image.svg";
 import { Styles } from "./style";
+import SuccessIcon from "..//../img/success-icon.svg";
 import API from "../../services/API";
 
 const Uploader = () => {
@@ -23,8 +24,16 @@ const Uploader = () => {
     form.append("file", img);
     console.log(form.file);
     API.post("/upload", form).then(async (response) => {
-      setImageUrl(await response.data)
+      setImageUrl(await response.data);
     });
+  };
+
+  const copyToClipboard = (e) => {
+    navigator.clipboard.writeText(imageUrl);
+    e.target.innerText = "Copied!";
+    setTimeout(() => {
+      e.target.innerText = "Copy Link";
+    }, 5000);
   };
 
   return (
@@ -54,11 +63,19 @@ const Uploader = () => {
             </div>
           </section>
         )}
-        {
-        image !== undefined && imageUrl !== undefined && (
+        {image !== undefined && imageUrl !== undefined && (
           <section className="preview__section">
-            <p className="preview__title">Preview</p>
-            <img className='preview__image' src={imageUrl} alt="Uploaded preview" />
+            <img className="success__icon" src={SuccessIcon} alt="Success" />
+            <p className="preview__title">Uploaded Succesfully</p>
+            <img
+              className="preview__image"
+              src={imageUrl}
+              alt="Uploaded preview"
+            />
+            <div className="copy__area">
+              <input type="text" disabled value={imageUrl} />
+              <button onClick={copyToClipboard}>Copy Link</button>
+            </div>
           </section>
         )}
       </section>
