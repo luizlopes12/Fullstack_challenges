@@ -1,10 +1,10 @@
 # Fullstack_challenges
  Challenges to be certificated as a fullstack developer by <a href="https://devchallenges.io/">devchallenges.io</a>
 
-## 1.  Image Uploader
-- [x]
+## 
+- [x] 1.  Image Uploader
 
-- [x] DivTech - Deseenvolvedor Fullstack Jr (03/2022 - 06/2022)
+
 #### Challenge: 
 
 Create an Image Uploader application. 
