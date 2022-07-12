@@ -145,4 +145,19 @@ export const Styles = styled.section`
       animation: ${progressBarAnimation} 2s linear infinite;
     }
   }
+
+  .preview__section{
+    min-width: 350px;
+    max-width: 350px;
+    .preview__title{
+      width: fit-content;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #4f4f4f;
+      margin: auto;
+    }
+    .preview__image{
+      max-width: 100%;
+    }
+  }
 `;
