@@ -3,6 +3,7 @@
 
 
 ## 1. Image Uploader
+![screenshot](./screenshots/image_uploader.png)
 
 ### How to install
 
@@ -29,7 +30,5 @@ User story: I can see a loader when uploading
 User story: When the image is uploaded, I can see the image and copy it
 User story: I can choose to copy to the clipboard 
 ```
-
-![screenshot](./screenshots/image_uploader.png)
 
 #### More information in: https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx
