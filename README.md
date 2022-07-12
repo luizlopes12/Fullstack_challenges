@@ -4,6 +4,9 @@
 
 ## 1. Image Uploader
 
+#### How to install
+1. clone this repository ``` git clone https://github.com/luizlopes12/Fullstack_challenges/```
+
 
 #### Challenge: 
 
