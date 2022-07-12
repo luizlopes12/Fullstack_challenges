@@ -2,11 +2,12 @@
  Challenges to be certificated as a fullstack developer by <a href="https://devchallenges.io/">devchallenges.io</a>
 
 ### 1. Image Uploader
-``` 
 Challenge: Create an Image Uploader application. 
-           Use any front-end libraries of your choice. 
-           Create your API. Don’t look at the existing solution.
-```
+
+Use any front-end libraries of your choice. 
+
+Create your API. Don’t look at the existing solution.
+
 #### Fulfill user stories below:
 ```
 User story: I can drag and drop an image to upload it
