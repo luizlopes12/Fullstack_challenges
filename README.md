@@ -8,9 +8,9 @@
 
 1. Clone this repository
 2. Open the repository in a command prompt and type ```cd Image_uploader/backend```
-3. Run ```npm run dev``` to initialize the server on ``http://localhost:3001``
+3. Run ```npm install``` and ```npm run dev``` to initialize the server on ``http://localhost:3001``
 4. Open a new command prompt and type ```cd Image_uploader/frontend```
-5. Run ```npm start``` to initialize the application on ``http://localhost:3000``
+5. Run ```npm install``` and ```npm start``` to initialize the application on ``http://localhost:3000``
 
 
 #### Challenge: 
