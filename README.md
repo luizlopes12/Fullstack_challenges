@@ -21,3 +21,5 @@ User story: I can see a loader when uploading
 User story: When the image is uploaded, I can see the image and copy it
 User story: I can choose to copy to the clipboard 
 ```
+
+![](./screenshots/image_uploader.png)
