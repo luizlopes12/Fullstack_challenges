@@ -115,7 +115,7 @@ export const Styles = styled.section`
       margin: auto;
     }
     .loader {
-      width: 350px;
+      width: 320px;
       margin: 0 auto;
       border-radius: 10px;
       border: 4px solid transparent;
@@ -129,13 +129,13 @@ export const Styles = styled.section`
       position: absolute;
       top: -2px;
       right: -2px;
-      bottom: -10px;
+      bottom: -8px;
       left: -2px;
     }
     .loader .loaderBar {
       position: absolute;
       border-radius: 10px;
-      height: 10px;
+      height: 8px;
       top: 0;
       right: 100%;
       bottom: 0;
