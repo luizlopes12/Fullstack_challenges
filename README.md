@@ -13,7 +13,7 @@
 5. Run ```npm install``` and ```npm start``` to initialize the application on ``http://localhost:3000``
 
 
-#### Challenge: 
+### Challenge: 
 
 Create an Image Uploader application. 
 
@@ -21,7 +21,7 @@ Use any front-end libraries of your choice.
 
 Create your API. Don’t look at the existing solution.
 
-#### Fulfill user stories below:
+### Fulfill user stories below:
 ```
 User story: I can drag and drop an image to upload it
 User story: I can choose to select an image from my folder
@@ -32,4 +32,4 @@ User story: I can choose to copy to the clipboard
 
 ![screenshot](./screenshots/image_uploader.png)
 
-##### More information in: https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx
+#### More information in: https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx
