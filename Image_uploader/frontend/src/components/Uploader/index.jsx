@@ -50,13 +50,15 @@ const Uploader = () => {
           <section className="loading__section">
             <p className="uploading__title">Uploading</p>
             <div className="loader">
-              <div class="loaderBar"></div>
+              <div className="loaderBar"></div>
             </div>
           </section>
         )}
-        {image !== undefined && imageUrl !== undefined && (
+        {
+        image !== undefined && imageUrl !== undefined && (
           <section className="preview__section">
-            Preview
+            <p className="preview__title">Preview</p>
+            <img className='preview__image' src={imageUrl} alt="Uploaded preview" />
           </section>
         )}
       </section>
