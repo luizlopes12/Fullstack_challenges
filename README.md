@@ -3,6 +3,8 @@
 
 ## 1.  Image Uploader
 - [x]
+
+- [x] DivTech - Deseenvolvedor Fullstack Jr (03/2022 - 06/2022)
 #### Challenge: 
 
 Create an Image Uploader application. 
