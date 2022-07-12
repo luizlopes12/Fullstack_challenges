@@ -7,7 +7,6 @@ const Uploader = () => {
   const [image, setImage] = useState();
   const [imageUrl, setImageUrl] = useState();
 
-
   useEffect(() => {
     // API test
     API.get("/").then((response) => {
@@ -23,9 +22,8 @@ const Uploader = () => {
     const form = new FormData();
     form.append("file", img);
     console.log(form.file);
-    API.post("/upload", await form).then(async (response) => {
-        setImageUrl(await response.data)
-        console.log(response.data)
+    API.post("/upload", form).then(async (response) => {
+      setImageUrl(await response.data)
     });
   };
 
@@ -42,19 +40,25 @@ const Uploader = () => {
               <span>Drag and drop your image here</span>
             </div>
             <div className="btn__container">
-              <input type="file" onChange={handleImage}/>
-              <span className="btn">
-                Choose a file
-              </span>
+              <input type="file" onChange={handleImage} />
+              <span className="btn">Choose a file</span>
             </div>
           </>
         )}
 
-        {image !== undefined && (
-          <>Uploading</>
+        {image !== undefined && imageUrl === undefined && (
+          <section className="loading__section">
+            <p className="uploading__title">Uploading</p>
+            <div className="loader">
+              <div class="loaderBar"></div>
+            </div>
+          </section>
         )}
-
-
+        {image !== undefined && imageUrl !== undefined && (
+          <section className="preview__section">
+            Preview
+          </section>
+        )}
       </section>
     </Styles>
   );

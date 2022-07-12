@@ -1,4 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const progressBarAnimation = keyframes`
+  0% {
+    left:0%;
+    right:100%;
+    width:0%;
+  }
+  10% {
+    left:0%;
+    right:75%;
+    width:25%;
+  }
+  90% {
+    right:0%;
+    left:75%;
+    width:25%;
+  }
+  100% {
+    left:100%;
+    right:0%;
+    width:0%;
+  }
+  `;
 
 export const Styles = styled.section`
   .upload__section {
@@ -78,6 +101,48 @@ export const Styles = styled.section`
         font-weight: 500;
         font-size: 0.8em;
       }
+    }
+  }
+  .loading__section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .uploading__title {
+      width: fit-content;
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #4f4f4f;
+      margin: auto;
+    }
+    .loader {
+      width: 350px;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: 4px solid transparent;
+      position: relative;
+      padding: 1px;
+    }
+    .loader:before {
+      content: "";
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -10px;
+      left: -2px;
+    }
+    .loader .loaderBar {
+      position: absolute;
+      border-radius: 10px;
+      height: 10px;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      left: 0;
+      background: #4088ed;
+      width: 0;
+      animation: ${progressBarAnimation} 2s linear infinite;
     }
   }
 `;
