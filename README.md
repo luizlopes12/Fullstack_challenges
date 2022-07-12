@@ -6,7 +6,7 @@
 
 ### How to install
 
-1. Clone this repository ```git clone https://github.com/luizlopes12/Fullstack_challenges.git```
+1. Clone this repository
 2. Open the repository in a command prompt and type ```cd Image_uploader/backend``` to access the backend
 3. Run ```npm run dev``` to initialize the server on ``http://localhost:3001``
 4. Open a new command prompt and type ```cd Image_uploader/frontend``` to access the frontend
