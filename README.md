@@ -1,8 +1,8 @@
 # Fullstack_challenges
  Challenges to be certificated as a fullstack developer by <a href="https://devchallenges.io/">devchallenges.io</a>
 
-## 1. - [x] Image Uploader
-
+## 1.  Image Uploader
+- [x]
 #### Challenge: 
 
 Create an Image Uploader application. 
