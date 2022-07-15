@@ -4,5 +4,5 @@ const port = 3001
 app.use(express.json())
 
 app.listen(port, () =>{
-    console.log('Servidor rodando')
+    console.log(`Servidor rodando porta: ${port}`)
 })

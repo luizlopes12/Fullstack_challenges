@@ -28,3 +28,7 @@ Backend functions: {
 }
 
 That requires a database? idk
+
+The inputs will be a label(image name) and the image file
+
+The outputs will be a list, and fuctions to be updated and deleted
