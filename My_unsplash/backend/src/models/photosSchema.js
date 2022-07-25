@@ -5,6 +5,6 @@ const PhotosSchema = new mongoose.Schema({
     imageUrl: String,
 })
 
-const Photo = mongoose.model('Photos', PhotosSchema);
+const Photo = new mongoose.model('Photos', PhotosSchema);
 
 module.exports = Photo;
