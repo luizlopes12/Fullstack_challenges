@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
-
-mongoose
-  .connect(
-    "",
+require('dotenv').config()
+mongoose.connect(
+  process.env.MONGO_URL,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Conectado ao banco de dados"))
