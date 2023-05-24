@@ -16,7 +16,6 @@ app.get('/', (req, res) =>{
 })
 
 app.post("/upload", upload.single("file"), async (req, res) => {
-    console.log(req.protocol + '://' + req.get('host') + '/files/' + req.file?.filename);
     res.json(
         req.protocol + '://' + req.get('host') + '/files/' + req.file?.filename
     )
